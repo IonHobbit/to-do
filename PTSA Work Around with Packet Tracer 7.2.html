@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>POST data</title>
+    <script src="/portal/simplesaml/resources/post.js"></script>
+    <link type="text/css" rel="stylesheet" href="/portal/simplesaml/resources/post.css" />
+</head>
+<body>
+
+    <noscript>
+        <p><strong>Note:</strong> 
+        Since your browser does not support JavaScript, 
+        you must press the button below once to proceed.</p> 
+    </noscript> 
+
+    <form method="post" 
+        action="https://identity.cisco.com/api/v1/idp-discovery/discovery">
+    <!-- Need to add this element and call click method, because calling 
+    submit() on the form causes failed submission if the form has another 
+    element with name or id of submit.
+    See: https://developer.mozilla.org/en/DOM/form.submit#Specification -->
+    <input type="submit" id="postLoginSubmitButton"/>
+<input type="hidden" name="SAMLRequest" value="PHNhbWxwOkF1dGhuUmVxdWVzdCB4bWxuczpzYW1scD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIiB4bWxuczpzYW1sPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YXNzZXJ0aW9uIiBJRD0iXzUwOTYzMWMxNzY1ZDhlNmJiNDIzZjIwYzY1ODZmYTZiYzgyYTU5YzVmNiIgVmVyc2lvbj0iMi4wIiBJc3N1ZUluc3RhbnQ9IjIwMjAtMDItMDhUMDk6MDE6NDhaIiBEZXN0aW5hdGlvbj0iaHR0cHM6Ly9pZGVudGl0eS5jaXNjby5jb20vYXBpL3YxL2lkcC1kaXNjb3ZlcnkvZGlzY292ZXJ5IiBBc3NlcnRpb25Db25zdW1lclNlcnZpY2VVUkw9Imh0dHBzOi8vd3d3Lm5ldGFjYWQuY29tL3BvcnRhbC9zaW1wbGVzYW1sL21vZHVsZS5waHAvc2FtbC9zcC9zYW1sMi1hY3MucGhwL2duaS1zcC1mb3Itb25laWQiIFByb3RvY29sQmluZGluZz0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmJpbmRpbmdzOkhUVFAtUE9TVCI+PHNhbWw6SXNzdWVyPmduaV9zcF9mb3Jfb25laWQ8L3NhbWw6SXNzdWVyPjxkczpTaWduYXR1cmUgeG1sbnM6ZHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiPgogIDxkczpTaWduZWRJbmZvPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+CiAgICA8ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxkc2lnLW1vcmUjcnNhLXNoYTI1NiIvPgogIDxkczpSZWZlcmVuY2UgVVJJPSIjXzUwOTYzMWMxNzY1ZDhlNmJiNDIzZjIwYzY1ODZmYTZiYzgyYTU5YzVmNiI+PGRzOlRyYW5zZm9ybXM+PGRzOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNlbnZlbG9wZWQtc2lnbmF0dXJlIi8+PGRzOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjc2hhMjU2Ii8+PGRzOkRpZ2VzdFZhbHVlPk5NanpqOUVlMnZNU21rdnhLOU16djJSQ2FBRnpSNGtuQ2FHbU83bGlTcTg9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+PGRzOlNpZ25hdHVyZVZhbHVlPm9vYk5RTGpMMzR3YnJkQVRoeVUvb1lFQzRvZ2d1dnZGcVJYQkZYWER4dmdUV1RZQlVJTngybWhtRytwTU1jRnNjdHdVVVFFVnlXeUVNVXVTWmdGOEQ4Zkg3Y05YUks2aWo4eG9xOHJLbE8xMFV4SHpXZzFtdGI3Q3NiT0daNjZWTkVxMTgwWGdyeXJQd1lsTXpTRVdOcGIyR0xMWmVHdkFUd1RRSUU0dzJWdjNMemhJTUpYR09XVkxKaU52K20vZDJSamdCMjZOaXBJZUI5ZWJTenpjdWJtTXhxZENYS1grcUpieGlRa2ZKb3NlbUdRc1pNZmpaUmN0UlRvc21mOUxLbVZMRkhJd3ZYL3BxWUJGWWpwVXg1TnRMMTd2dm1RalJGUnd2T2k4M0hHYXFvUjdGV0dhNU5rSitKTXR6VE1KNENhVUtJM2tDbStOUUh6QTRBSDQ3Zz09PC9kczpTaWduYXR1cmVWYWx1ZT4KPGRzOktleUluZm8+PGRzOlg1MDlEYXRhPjxkczpYNTA5Q2VydGlmaWNhdGU+TUlJRUVEQ0NBdmlnQXdJQkFnSUpBS1ZBVTJRUWxncXBNQTBHQ1NxR1NJYjNEUUVCQ3dVQU1JR2NNUXN3Q1FZRFZRUUdFd0pWVXpFTE1Ba0dBMVVFQ0F3Q1EwRXhFVEFQQmdOVkJBY01DRk5oYmlCS2IzTmxNUkF3RGdZRFZRUUtEQWRPWlhSQlkyRmtNUTR3REFZRFZRUUxEQVZEYVhOamJ6RWRNQnNHQTFVRUF3d1VaMjVwT
