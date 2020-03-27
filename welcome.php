@@ -20,11 +20,9 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="home.html">to-do</a>
+        <a class="navbar-brand" href="#">to-do</a>
       </div>
       <ul class="nav navbar-nav" style="float: right;">
-        <li><a href="login.php">login</a></li>
-        <li><a href="signup.php">signup</a></li>
         <li><a href="logout.php">logout</a></li>
       </ul>
     </div>
@@ -32,7 +30,7 @@
 
   <div class="container" id="big">
     <p>
-      Welcome <?php session_start();$name = $_SESSION['first_name'];echo $name;?> !
+      Welcome <?php session_start();$name = $_SESSION['first_name'];echo $name;?>!
     </p>
     <p> Are you ready to get your life together? </p>
     <button type="button" class="btn btn-default"><a href="signup.php">let's go</a></button>

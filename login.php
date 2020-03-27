@@ -12,7 +12,7 @@
 
 <body>
     <div id="forms">
-        <form action="login.php" class="form1" method="POST" enctype="multipart/form-data">
+        <form action="loginform.php" class="form1" method="POST" enctype="multipart/form-data">
 
             <div class="email">
                 <label for="email">Email</label><br>
@@ -24,12 +24,12 @@
                 <input type="password" placeholder="Enter your Password" name="password">
             </div>
 
-            <input type="submit" name="login" value="Log in" /> <br>
+            <input type="submit" name="login" value="Log in"/><br>
 
             <br>
+            Click <a href="#">here</a> if you've forgotten your password.<br><br>
 
-            Don't have an account? Click <a href="signup.php">here</a> to register. <br><br>
-            Click <a href="home.html">here</a> if you've forgotten your password.
+            Don't have an account? Click <a href="signup.php">here</a> to register. 
 
         </form>
     </div>

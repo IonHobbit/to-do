@@ -4,6 +4,6 @@
 session_destroy();
 
 //redirect page to index.php
-header('location:home.html');
+header("Location: home.html");
 
 ?>

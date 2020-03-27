@@ -14,7 +14,7 @@
     <div id="forms">
         <form action="signupform.php" class="form1" method="POST" enctype="multipart/form-data">
 
-            <button type="button" class="btn btn-default"><a href="welcome.html">Sign Up with Google</a></button>
+            <button type="button" class="btn btn-default"><a href="#">Sign Up with Google</a></button>
 
             <br><br>
             or <br><br>
@@ -37,7 +37,6 @@
                 <label for="password">Password</label><br>
                 <input type="password" placeholder="Enter your Password" name="password">
             </div>
-
 
             <br>
             <button type="submit" class="btn btn-default" name="reg_user">Create Account</button>
