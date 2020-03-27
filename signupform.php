@@ -12,7 +12,7 @@
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
-        header("Location: /sdp_draft/welcome.php");
+        header("Location: ./welcome.php");
         CloseCon($conn);
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

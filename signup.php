@@ -1,18 +1,3 @@
-<?php
-
-include('config.php');
-
-$login_button = '';
-
-if (!isset($_SESSION['access_token'])) {
-    //Create a URL to obtain user authorization
-    $login_button = '<a href="' . $google_client->createAuthUrl() . '"><img src="sign-in-with-google.png" /></a>';
-} else {
-    $login_button = '';
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,19 +14,7 @@ if (!isset($_SESSION['access_token'])) {
     <div id="forms">
         <form action="signupform.php" class="form1" method="POST" enctype="multipart/form-data">
 
-            <!-- <button type="button" class="btn btn-default"><a href="welcome.html">Sign Up with Google</a></button> -->
-            <?php
-            if ($login_button == '') {
-                echo '<div class="panel-heading">Welcome User</div><div class="panel-body">';
-                echo '<img src="' . $_SESSION["image"] . '" class="img-responsive img-circle img-thumbnail" />';
-                echo '<h3><b>Name :</b> ' . $_SESSION['first_name'] . ' ' . $_SESSION['last_name'] . '</h3>';
-                echo '<h3><b>Email :</b> ' . $_SESSION['email_address'] . '</h3>';
-                echo '<h3><a href="logout.php">Logout</h3></div>';
-            } else {
-                echo '<div align="center">' . $login_button . '</div>';
-                $_SESSION["google"] = $login_button;
-            }   
-            ?>
+            <button type="button" class="btn btn-default"><a href="welcome.html">Sign Up with Google</a></button>
 
             <br><br>
             or <br><br>
