@@ -19,11 +19,8 @@
 
     <?php
         include "calendar.php";
-
         $calendar = new Calendar;
         echo $calendar->show();
-        echo date('d', time());
-        
     ?>
 </body>
 

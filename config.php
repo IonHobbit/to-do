@@ -6,7 +6,7 @@
 require_once 'C:/xampp/php/vendor/autoload.php';
 
 //Make object of Google API Client for call Google API
-$google_client = new Google_Client();
+// $google_client = new Google_Client();
 
 //Set the OAuth 2.0 Client ID
 $google_client->setClientId('732250484957-tukqd7t2pj7v9ojomoq6o8cranbhcdtu.apps.googleusercontent.com');
