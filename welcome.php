@@ -30,10 +30,14 @@
 
   <div class="container" id="big">
     <p>
-      Welcome <?php session_start();$name = $_SESSION['first_name'];echo $name;?>!
+      Welcome <?php session_start();$name = $_SESSION['first_name'];echo $name;
+      include 'calendar.php';
+      $calender = new Calender();
+      echo $calender->show();
+      ?>!
     </p>
     <p> Are you ready to get your life together? </p>
-    <button type="button" class="btn btn-default"><a href="signup.php">let's go</a></button>
+    <button type="button" class="btn btn-default"><a href="./calendar.php">let's go</a></button>
   </div>
 
 </body>
